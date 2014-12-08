@@ -1,0 +1,6 @@
+*.log
+*.ide
+*.dll
+*.suo
+*.prof
+*.user
