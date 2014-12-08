@@ -1,4 +1,5 @@
 ﻿using HelloMVC.Models;
+using HelloMVC.Data;
 using Microsoft.AspNet.Mvc;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
@@ -7,14 +8,15 @@ namespace HelloMVC.Controllers
 {
     public class HomeController : Controller
     {
+        IUserRepository _repository;
+        public HomeController(IUserRepository repo)
+        {
+            _repository = repo;
+        }
         // GET: /<controller>/
         public IActionResult Index()
         {
-            User user = new User()
-            {
-                Name = "My name",
-                Address = "My address"
-            };
+            var user = _repository.GetUser();
             return View(user);
         }
     }
