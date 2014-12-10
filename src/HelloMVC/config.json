@@ -1,0 +1,9 @@
+﻿{
+    "demo": {
+        "day": "thursday",
+        "people": 20,
+        "areTheyCool": true,
+        "tags": "Asp.Net vNext;Net Core 5;Pizza"
+        //tags: ["first", "second"]
+    }
+}
