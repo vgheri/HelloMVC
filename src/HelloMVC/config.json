@@ -4,6 +4,6 @@
         "people": 20,
         "areTheyCool": true,
         "tags": "Asp.Net vNext;Net Core 5;Pizza"
-        //tags: ["first", "second"]
+        //tags: ["first", "second"] Arrays are not supported :(
     }
 }
